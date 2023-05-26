@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>킨텍스 플러스 관리자</title>
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <header class="headerWrap"></header>
+
+  <div class="wrap">
+    <div class="container-xl">
+      <h2 class="fs-4 fw-bold mb-4">임직원 관리</h2>
+      <form class="row g-3">
+        <div class="col-md-12">
+          <label for="inputName" class="form-label">이름</label>
+          <input type="text" class="form-control" id="inputName" placeholder="홍길동">
+        </div>
+        <div class="col-md-6">
+          <label for="inputID" class="form-label">아이디</label>
+          <input type="text" class="form-control" id="inputID" placeholder="hgd123">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPW" class="form-label">패스워드</label>
+          <input type="password" class="form-control" id="inputPW" placeholder="********">
+        </div>
+        <div class="col-md-12">
+          <label for="inputEmail" class="form-label">이메일</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="hgd123@example.com">
+        </div>
+        
+        <div class="col-md-12">
+          <p class="fs-6">권한</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="superAdmin" value="option1">
+            <label class="form-check-label" for="superAdmin">슈퍼관리자</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="teamLeader" value="option2">
+            <label class="form-check-label" for="teamLeader">팀장</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="teamMember" value="option3">
+            <label class="form-check-label" for="teamMember">직원</label>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <p class="fs-6">직급</p>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option value="1">사원</option>
+              <option value="2">주임</option>
+              <option value="3">대리</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+          <p class="fs-6">부서</p>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option value="1">기계팀</option>
+              <option value="2">영업팀</option>
+              <option value="3">기획팀</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+          <p class="fs-6">상태</p>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option value="1">사용</option>
+              <option value="2">비사용</option>
+            </select>
+        </div>
+
+        <div class="col-md-12">
+          <label for="inputMemo" class="form-label">메모</label>
+          <textarea class="form-control" id="inputMemo" rows="3"></textarea>
+        </div>
+
+        <div class="col-md-12"><button type="button" class="btn btn-success">저장</button></div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

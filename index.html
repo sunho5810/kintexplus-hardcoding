@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>킨텍스 플러스 관리자</title>
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <header class="headerWrap"></header>
+
+  <div class="wrap">
+    <div class="container-xl">
+      <h2 class="fs-4 fw-bold mb-4">임직원 관리</h2>
+      <div class="row mt-4">
+        <p class="fs-6 mb-2">임직원 현황과 정보를 입력할 수 있는 페이지 입니다.</p>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <a href="javascript:void(0);" class="btn btn-outline-primary active">전체회원</a>
+          <a href="javascript:void(0);" class="btn btn-outline-primary">슈퍼관리자</a>
+          <a href="javascript:void(0);" class="btn btn-outline-primary">관리자</a>
+          <a href="javascript:void(0);" class="btn btn-outline-primary">직원</a>
+        </div>
+      </div>
+
+      <div class="row mt-4 gap-2">
+        <p class="fs-6 mb-2">전체 : 10건</p>
+        <div class="col-md">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a href="javascript:void(0);" class="btn btn-outline-primary">전체목록</a>
+            <a href="javascript:void(0);" class="btn btn-outline-primary">엑셀 다운로드</a>
+            <a href="javascript:void(0);" class="btn btn-outline-primary">선택삭제</a>
+            <a href="javascript:void(0);" class="btn btn-outline-primary">회원추가</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="d-flex gap-4 justify-content-end">
+            <div class="d-flex align-items-center gap-2">
+              <select class="form-select" aria-label="Default select example" style="width: auto;">
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select>
+              <p class="fs-6 mb-0">보기</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <a href="javascript:void(0);" class="btn btn-dark">삭제</a>
+              <a href="javascript:void(0);" class="btn btn-success">등록</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <table class="table text-center align-middle">
+          <colgroup>
+            <col style="width: 5%;">
+            <col style="width: 5%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+            <col style="width: 10%;">
+          </colgroup>
+          <thead class="table-light">
+            <tr>
+              <th>번호</th>
+              <th><input class="form-check-input" type="checkbox" value="" id=""></th>
+              <th>아이디</th>
+              <th>실명</th>
+              <th>부서</th>
+              <th>권한</th>
+              <th>최근로그인</th>
+              <th>상태</th>
+              <th>수정</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>1</td>
+              <td><input class="form-check-input" type="checkbox" value="" id=""></td>
+              <td>nosadmin</td>
+              <td>김노스</td>
+              <td>기계팀</td>
+              <td>슈퍼관리자</td>
+              <td>10:53</td>
+              <td>사용</td>
+              <td><a href="/repair-employee.html" class="btn btn-outline-dark btn-sm">수정</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
